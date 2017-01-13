@@ -1,20 +1,20 @@
 
 window.onload = function() {
     function line(ids) {
-        first = "|" + ids.map(id => " ![](https://github.com/" + id + ".png?size=117) |").join("")
-        second = "|" + ids.map(id => " --- |").join("")
-        third = "|" + ids.map(id => "[" + id + "](https://github.com/" + id + ") |").join("")
+        var first = "|" + ids.map(id => " ![](https://github.com/" + id + ".png?size=117) |").join("")
+        var second = "|" + ids.map(id => " --- |").join("")
+        var third = "|" + ids.map(id => "[" + id + "](https://github.com/" + id + ") |").join("")
 
         return first + "\n" + second + "\n" + third
     }
 
     function table(input) {
-        ids = input.split(",").map(id =>
+        var ids = input.split(",").map(id =>
             id.trim()
         )
 
-        size = 6
-        lines = ids.map((e, i) =>
+        var size = 6
+        var lines = ids.map((e, i) =>
             i % size === 0 ? ids.slice(i, i + size) : null
         ).filter(e => e)
 
