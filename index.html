@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -76,8 +75,8 @@ function copyToClipboard(textArea) {
 
   try {
     var successful = document.execCommand('copy')
-    var msg = successful ? 'com sucesso!' : 'sem suceso :('
-    textArea.value = "Código copiado " + msg
+    var msg = successful ? 'copied successfully!' : 'couldn\'t be copied :('
+    textArea.value = "Code " + msg
   } catch (err) {
     console.log('Oops, unable to copy');
   }
@@ -125,7 +124,7 @@ new Vue({
   <br/>
   <textarea v-html="markdown" id="markdown"></textarea>
   <br/>
-  <button v-on:click="copy">Cópiar código para área de transferência</button>
+  <button v-on:click="copy">Copy code to clipboard</button>
   <br/>
   <br/>
   <label>Exemplo:</label>
