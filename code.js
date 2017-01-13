@@ -36,7 +36,7 @@ window.onload = function() {
     new Vue({
         el: '#ids',
         data: {
-            input: 'fpg1503'
+            input: 'fpg1503, CocoaHeadsBrasil'
         },
         computed: {
             markdown: function() {
