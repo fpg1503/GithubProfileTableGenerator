@@ -11,9 +11,10 @@ You can view a live demo at http://fpg1503.com/GithubProfileTableGenerator/
 
 The following sample will be updated with the contributors of this repo.
 
-| ![](https://github.com/fpg1503.png?size=117) |
-| --- |
-|[fpg1503](https://github.com/fpg1503) |
+| ![](https://github.com/fpg1503.png?size=117) | ![](https://github.com/eserete.png?size=117) |
+| --- | --- |
+|[fpg1503](https://github.com/fpg1503) |[eserete](https://github.com/eserete) |
+
 
 ## Contributing
 
