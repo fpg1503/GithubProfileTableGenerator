@@ -5,7 +5,7 @@ window.onload = function() {
         var second  = ids.reduce((rest, id) => rest + " --- |", "|")
         var third   = ids.reduce((rest, id) => rest + "[" + id + "](https://github.com/" + id + ") |", "|")
 
-        return first + "\n" + second + "\n" + third
+        return [first, second, third].reduce((accumulator, line) => accumulator + line + "\n", "")
     }
 
     function table(input) {
