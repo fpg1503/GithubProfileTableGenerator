@@ -18,7 +18,7 @@ window.onload = function() {
             i % size === 0 ? ids.slice(i, i + size) : null
         ).filter(e => e)
 
-        return lines.map(line).join("\n\n")
+        return lines.reduce((accumulator, currentLine) => accumulator + line(currentLine) + "\n\n", "")
     }
 
     function copyToClipboard(textArea) {
