@@ -26,8 +26,8 @@ window.onload = function() {
 
         try {
             var successful = document.execCommand('copy')
-            var msg = successful ? 'copied successfully!' : 'couldn\'t be copied :('
-            textArea.value = "Code " + msg
+            var message = "Code " + successful ? 'copied successfully!' : 'couldn\'t be copied :('
+            document.getElementsByTagName("button")[0].title = "Message"
         } catch (err) {
             console.log('Oops, unable to copy');
         }
