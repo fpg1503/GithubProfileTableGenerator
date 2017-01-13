@@ -27,7 +27,7 @@ window.onload = function() {
         try {
             var successful = document.execCommand('copy')
             var message = successful ? 'copied successfully!' : 'couldn\'t be copied :('
-            document.getElementsByTagName("button")[0].title = "Code " + message
+            console.log("Code " + message)
         } catch (err) {
             console.log('Oops, unable to copy');
         }
