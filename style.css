@@ -1,9 +1,20 @@
 html, body, #ids {
-	width: 80%;
 	margin: 0 auto;
 	height: 100%;
 	font-family: 'Helvetica Neue', Arial, sans-serif;
 	color: #333;
+}
+
+@media screen and (max-width: 500px) /* Mobile */ {
+	html, body, #ids {
+		width: 98%;
+	}
+}
+
+@media screen and (min-width: 501px) /* Not Mobile */ {
+	html, body, #ids {
+		width: 90%;
+	}
 }
 
 input {
