@@ -1,9 +1,9 @@
 
 window.onload = function() {
     function line(ids) {
-        var first = "|" + ids.map(id => " ![](https://github.com/" + id + ".png?size=117) |").join("")
-        var second = "|" + ids.map(id => " --- |").join("")
-        var third = "|" + ids.map(id => "[" + id + "](https://github.com/" + id + ") |").join("")
+        var first   = ids.reduce((rest, id) => rest + " ![](https://github.com/" + id + ".png?size=117) |", "|")
+        var second  = ids.reduce((rest, id) => rest + " --- |", "|")
+        var third   = ids.reduce((rest, id) => rest + "[" + id + "](https://github.com/" + id + ") |", "|")
 
         return first + "\n" + second + "\n" + third
     }
