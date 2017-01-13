@@ -7,11 +7,13 @@
         <script type="text/javascript" src="https://unpkg.com/vue@latest/dist/vue.min.js"></script>
         <link rel="stylesheet" href="style.css" type="text/css"/>
         
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Github Profile Table Generator</title>
         <script type="text/javascript" src="code.js"></script>
     </head>
     <body>
         <div id="ids">
+            <h1>Github Profile Table Generator</h1>
             <label>GitHub IDs:</label>
             <br/>
             <input type="text" :value="input" @input="update" />
