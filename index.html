@@ -16,14 +16,14 @@
             <br/>
             <input type="text" :value="input" @input="update" />
             <br/>
-            <label>Código Gerado:</label>
+            <label>Generated Code:</label>
             <br/>
             <textarea v-html="markdown" id="markdown"></textarea>
             <br/>
             <button v-on:click="copy">Copy code to clipboard</button>
             <br/>
             <br/>
-            <label>Exemplo:</label>
+            <label>Example:</label>
             <div v-html="compiledMarkdown"></div>
             <br/>
         </div>
